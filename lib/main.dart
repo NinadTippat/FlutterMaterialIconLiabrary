@@ -3468,12 +3468,7 @@ class _IconDisplayState extends State<IconDisplay> {
             ),
             onChanged: (value) => setState(() => iconName = value),
           ),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {}); 
-            },
-            child: const Text('Display Icon'),
-          ),
+         
           getIcon(iconName),
         ],
       ),
