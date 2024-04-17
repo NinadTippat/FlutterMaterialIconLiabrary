@@ -40,25 +40,7 @@ class IconDisplay extends StatefulWidget {
 class _IconDisplayState extends State<IconDisplay> {
   String iconName = '';
 
-  /// Function to dynamically determine the icon based on input string
-  // Icon getIcon(String iconName) {
-  //   switch (iconName.toLowerCase()) {
-  //     case 'add':
-  //       return const Icon(Icons.add); 
-  //     case 'search':
-  //       return const Icon(Icons.search);
-  //     case 'home':
-  //       return const Icon(Icons.home);
-  //     case 'favorite':
-  //       return const Icon(Icons.favorite);
-  //     case 'arrow back':
-  //       return const Icon(Icons.arrow_back);
-  //     case 'settings':
-  //       return const Icon(Icons.settings);
-  //     default:
-  //       return const Icon(Icons.error); // Use error icon for unsupported input
-  //   }
-  // }
+  
   Icon getIcon(String iconName) {
   switch (iconName) {
     case '360':
@@ -3488,11 +3470,11 @@ class _IconDisplayState extends State<IconDisplay> {
           ),
           ElevatedButton(
             onPressed: () {
-              setState(() {}); // Rebuild when input changes
+              setState(() {}); 
             },
             child: const Text('Display Icon'),
           ),
-          getIcon(iconName), // Display the dynamically chosen icon
+          getIcon(iconName),
         ],
       ),
     );
